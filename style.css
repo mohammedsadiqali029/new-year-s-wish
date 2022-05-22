@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+/*font-family: 'Poppins', sans-serif; */
+* {
+  position: relative;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.bgImg {
+  background: url(img/bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  width: 100vw;
+  max-width: 450px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  color: #999;
+  padding-bottom: 60px;
+  box-shadow: 0 0 10px 1px rgb(0 0 0 / 14%), 0 1px 14px 2px rgb(0 0 0 / 12%),
+    0 0 5px -3px rgb(0 0 0 / 30%);
+}
+
+.countdown {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  z-index: 1;
+  background: transparent;
+}
+.countdown div {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.countdown div:before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background: #ff0;
+  color: #333;
+  font-size: 0.4em;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.countdown #day:before {
+  content: "Days";
+}
+.countdown #hour:before {
+  content: "Hours";
+}
+.countdown #minute:before {
+  content: "Minutes";
+}
+.countdown #second:before {
+  content: "Seconds";
+}
+h2 {
+  color: #009136;
+  background: transparent;
+}
+.userMsg{
+   margin-top: 30px;
+   line-height: 35px;
+   font-size: 4em;
+   font-weight: 700px;
+   font-family: cursive;
+   background: transparent;
+   color: tomato;
+   text-shadow:  1px 1px 3px yellow, 1px 1px 3px yellow, -1px -1px 3px yellow, -1px -1px 3px black;
+}
+.wish {
+  width: 60%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: transparent;
+  z-index: 1;
+}
+.newYear {
+  width: 60%;
+  height: auto;
+  margin: 40px;
+  z-index: 1;
+  background: transparent;
+}
+
+.newYearCeleb {
+  width: 90%;
+  height: auto;
+  margin: 20px;
+  background: transparent;
+  margin-top: 40px;
+  z-index: 1
+  
+}
+
+.zoom-in-zoom-out {
+  margin: 24px;
+  animation: zoom-in-zoom-out 4s ease-out infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.txt
+{
+   font-size: 2.5em;
+   font-weight: 600;
+   text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;
+   background: transparent;
+   color:  #da4453;
+   color: -webkit-linear-gradient(to right, #da4453, #89216b);
+   color: linear-gradient(to right, #da4453, #89216b);
+
+}
+
+.box {
+  align-self: flex-end;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-50px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+.text{
+   margin-top: 0;
+   margin-bottom: 20px;
+   line-height: 35px;
+   font-size: 1.5em;
+   font-weight: 500px;
+   background: transparent;
+   color: tomato;
+   text-shadow:  1px 1px 3px yellow, 1px 1px 3px yellow, -1px -1px 3px yellow, -1px -1px 3px black;
+
+}
+span{
+   background: transparent;
+}
+ 
+#input {
+   height: 7%;
+   min-height: 42px;
+   display: grid;
+   grid-template-columns: 65% 35%;
+   border-radius: 32px;
+   background: transparent;
+   
+ }
+ #text {
+   margin-right: 5px;
+   margin-left: 0;
+   padding: 10px;
+   outline: none;
+   font-size: 20px;
+   background: transparent;
+   color: #333;
+   border-radius: 32px 32px 32px 32px;
+   border: solid 2px #777;
+ }
+
+ #send {
+   margin-left: 2px;
+   outline: none;
+   font-size: 20px;
+   color: #333;
+   background: transparent;
+   border: solid 2px #777 ;
+   border-radius: 32px;
+   transition-duration: 0.2s;
+ }
+ #send:active{
+   font-size: 16px;
+ }
+ .fa{
+    color: blue;
+ }
+.firework {
+  position: absolute;
+}
+.explosion {
+  position: absolute;
+  left: -2px;
+  bottom: 0;
+  width: 4px;
+  height: 80px;
+  transform-origin: 50% 100%;
+  overflow: hidden;
+}
+.explosion:nth-child(1) {
+  transform: rotate(0deg) translateY(-15px);
+}
+.explosion:nth-child(2) {
+  transform: rotate(30deg) translateY(-15px);
+}
+.explosion:nth-child(3) {
+  transform: rotate(60deg) translateY(-15px);
+}
+.explosion:nth-child(4) {
+  transform: rotate(90deg) translateY(-15px);
+}
+.explosion:nth-child(5) {
+  transform: rotate(120deg) translateY(-15px);
+}
+.explosion:nth-child(6) {
+  transform: rotate(150deg) translateY(-15px);
+}
+.explosion:nth-child(7) {
+  transform: rotate(180deg) translateY(-15px);
+}
+.explosion:nth-child(8) {
+  transform: rotate(210deg) translateY(-15px);
+}
+.explosion:nth-child(9) {
+  transform: rotate(240deg) translateY(-15px);
+}
+.explosion:nth-child(10) {
+  transform: rotate(270deg) translateY(-15px);
+}
+.explosion:nth-child(11) {
+  transform: rotate(300deg) translateY(-15px);
+}
+.explosion:nth-child(12) {
+  transform: rotate(330deg) translateY(-15px);
+}
+
+.explosion::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 40px;
+   background: #fdc830;  
+   background: -webkit-linear-gradient(to top, #fdc830, #f37335); 
+   background: linear-gradient(to top, #fdc830, #f37335);
+   overflow: hidden;
+}
+@keyframes explosion {
+  0% {
+    top: 100%;
+  }
+  33%,
+  100% {
+    top: -50%;
+  }
+}
+
+#firework1 {
+  left: 30%;
+  top: 30%;
+  transform: scale(1);
+}
+#firework1 .explosion::before {
+  animation: explosion 2s ease-in-out infinite;
+}
+
+#firework2 {
+  left: 30%;
+  top: 40%;
+  transform: scale(0.7);
+}
+#firework2 .explosion::before {
+  animation: explosion 2s 0.6s ease-in-out infinite;
+}
+
+#firework3 {
+  right: 40%;
+  top: 40%;
+  transform: scale(0.4);
+}
+#firework3 .explosion::before {
+  animation: explosion 2s 0.4s ease-in-out infinite;
+}
+
+#firework4 {
+  left: 20%;
+  top: 30%;
+  transform: scale(0.5);
+}
+#firework4 .explosion::before {
+  animation: explosion 2s 0.5s ease-in-out infinite;
+}
+
+#firework5 {
+  right: 20%;
+  top: 20%;
+  transform: scale(1);
+}
+#firework5 .explosion::before {
+  animation: explosion 2.5s ease-in-out infinite;
+}
